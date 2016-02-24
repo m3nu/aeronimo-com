@@ -22,8 +22,16 @@ $(document).ready(function() {
 	});
 
 //language switcher
-	if($('.language_switcher li#de').is('.active')){
+	var hashTag = window.location.hash;
+
+	if( $('.language_switcher li#de').is('.active') ){
     $('body').find('.en').hide()
+  }
+  if(hashTag == '#english'){
+  	$('.language_switcher li#en').addClass('active');
+  	$('.language_switcher li#de').removeClass('active');
+  	$('body').find('.de').hide();
+  	$('body').find('.en').show();
   }
 
   $('.language_switcher li').click(function(){

@@ -31,7 +31,7 @@
         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 pull-right ">
           <div class="nav">
             <ul class="language_switcher">
-                <li id="en"><a href="#">EN</a></li>
+                <li id="en"><a href="#english">EN</a></li>
                 <li id="de" class="active"><a href="#">DE</a></li>
             </ul>
           </div>
@@ -258,8 +258,19 @@
         width: '100%' 
       });
 
+    // language switcher  
+      var hashTag = window.location.hash;
+
       if($('.language_switcher li#de').is('.active')){
         $('body').find('.en').hide()
+      }
+
+      if(hashTag == '#english'){
+        $('.language_switcher li#en').addClass('active');
+        $('.language_switcher li#de').removeClass('active');
+
+        $('body').find('.de').hide();
+        $('body').find('.en').show();
       }
 
       $('.language_switcher li').click(function(){

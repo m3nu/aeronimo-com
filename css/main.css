@@ -39,13 +39,13 @@ body {
 	margin-right: 0px;
 }
 .nav a {
-	color: #009999;
+	color: rgba(0, 153, 153, 0.6);
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 900;
 }
 .nav a:hover {
-	color: #ff9f74;
+	color: #009999;
 }
 .sign-up-banner {
 	height: 450px;
@@ -54,6 +54,7 @@ body {
 	background-repeat: no-repeat;
 }
 .language_switcher li:first-child > a:after{
+	color: #009999;
 	content: "|";
 	font-size: 13px;
 	position: absolute;
@@ -64,7 +65,7 @@ body {
 	color: #009999;
 }
 .language_switcher li.active a{
-	color: #FFAA00;
+	color: #009999;
 }
 /*----- Header Slider----*/
 
@@ -733,7 +734,7 @@ input.button {
 			margin-right: 0px;
 	}
 	.nav a {
-			color: #009999;
+			color: rgba(0, 153, 153, 0.6);
 			text-decoration: none;
 			text-transform: uppercase;
 			font-weight: 900;
