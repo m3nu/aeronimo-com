@@ -4,17 +4,24 @@
 //Banner height
 $(document).ready(function() {
 
-	var viewport_width = window.innerWidth;
-	var viewport_height = window.innerHeight;
+	var header_height 	= $('#home').innerHeight(),
+			viewport_width 	= window.innerWidth,
+			viewport_height = window.innerHeight,
+			slider_height 	= viewport_height - header_height;
 
 //Banner
-	$('.banner,.carousel .item').height((viewport_height));
+	$('.banner,.carousel .item').height(slider_height);
+	
 	$(window).resize(function() {
-	  var viewport_width = window.innerWidth;
-	  var viewport_height = window.innerHeight;
-		$('.banner,.carousel .item').height((viewport_height));
+	var header_height 	= $('#home').innerHeight(),
+			viewport_width 	= window.innerWidth,
+			viewport_height = window.innerHeight,
+			slider_height 	= viewport_height - header_height;
+
+		$('.banner,.carousel .item').height(slider_height);
 	});
-	});
+	
+});
 	
 //Page Smooth Scrolling
 
