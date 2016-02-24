@@ -20,6 +20,26 @@ $(document).ready(function() {
 
 		$('.banner,.carousel .item').height(slider_height);
 	});
+
+//language switcher
+	if($('.language_switcher li#de').is('.active')){
+    $('body').find('.en').hide()
+  }
+
+  $('.language_switcher li').click(function(){
+    $('.language_switcher li').removeClass('active');
+    $(this).addClass('active');
+
+    if($('.language_switcher #en').is('.active')){
+      $('body').find('.de').hide();
+      $('body').find('.en').show();
+    }
+    if($('.language_switcher #de').is('.active')){
+      $('body').find('.en').hide();
+      $('body').find('.de').show();
+    } 
+
+  }); 	
 	
 });
 	

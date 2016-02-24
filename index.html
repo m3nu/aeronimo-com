@@ -32,8 +32,8 @@
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 pull-right ">
           <div class="nav">
             <ul class="language_switcher">
-                <li><a href="#">EN</a></li>
-                <li><a href="#">DE</a></li>
+                <li id="en"><a href="#">EN</a></li>
+                <li id="de" class="active"><a href="#">DE</a></li>
             </ul>
           </div>
         </div>
@@ -48,8 +48,14 @@
                       <div class="container">
                           <div class="col-md-12">
                               <div class="content">
+                                <div class="de">
                                   <h1>Ein neuer Blickwinkel ändert, wie wir die Welt sehen.</h1>
                                   <h2>Er ändert, wie wir bisher vertraute Dinge betrachten.</h2>
+                                </div>
+                                <div class="en">
+                                  <h1>A new perspective changes the way we look at the world.</h1>
+                                  <h2>It changes how we perceive things formerly familiar to us.</h2>
+                                </div>
                               </div>
                           </div>
                       </div>
@@ -60,8 +66,14 @@
                       <div class="container">
                           <div class="col-md-12">
                               <div class="content">
+                                <div class="de">
                                   <h1>Ein neuer Blickwinkel ändert, wie wir die Welt sehen.</h1>
                                   <h2>Er ändert, wie wir bisher vertraute Dinge betrachten.</h2>
+                                </div>
+                                <div class="en">
+                                  <h1>A new perspective changes the way we look at the world.</h1>
+                                  <h2>It changes how we perceive things formerly familiar to us.</h2>
+                                </div>
                               </div>
                           </div>
                       </div>
@@ -72,8 +84,14 @@
                       <div class="container">
                           <div class="col-md-12">
                               <div class="content">
+                                <div class="de">
                                   <h1>Ein neuer Blickwinkel ändert, wie wir die Welt sehen.</h1>
                                   <h2>Er ändert, wie wir bisher vertraute Dinge betrachten.</h2>
+                                </div>
+                                <div class="en">
+                                  <h1>A new perspective changes the way we look at the world.</h1>
+                                  <h2>It changes how we perceive things formerly familiar to us.</h2>
+                                </div>
                               </div>
                           </div>
                       </div>
@@ -98,7 +116,10 @@
           <img src="images/body/howitwork-img1.png" alt="How it works?">
         </div>
         <div class="col-lg-pull-6 col-md-6 col-sm-12 col-xs-12">
-          <div class="txt">Aeronimo schickt uns in die Luft und gibt uns so eine neue Sicht auf die Welt. </div>              
+          <div class="txt">
+            <div class="de">Aeronimo schickt uns in die Luft und gibt uns so eine neue Sicht auf die Welt. </div>
+            <div class="en">Aeronimo boosts us up into the air and sends us into bird’s eye perspective. Drones bear along sheer breathtaking opportunities. They allow us to see and experience the world from above, to measure and analysize it in so far unknown ways. Let Aeronimo send you to new spheres and experience the world from a new angle!</div>
+          </div>              
         </div>
       </div>
       
@@ -107,7 +128,10 @@
           <img src="images/body/devtime-img.png" alt="Reduce development time">
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">              
-          <div class="txt">Drohnen bieten uns unglaubliche Möglichkeiten. Sie lassen uns die Welt von oben erleben, sehen, messen und analysieren. Gehen Sie mit Aeronimo in die Luft und erleben Sie die Welt ganz neu! </div>
+          <div class="txt">
+            <div class="de">Drohnen bieten uns unglaubliche Möglichkeiten. Sie lassen uns die Welt von oben erleben, sehen, messen und analysieren. Gehen Sie mit Aeronimo in die Luft und erleben Sie die Welt ganz neu!</div>
+            <div class="en">GO UP INTO THE AIR WITH AERONIMO! More to come soon</div>
+           </div>
         </div>
       </div>
 
@@ -116,8 +140,12 @@
           <img src="images/body/alldevices-img.png" alt="Works on all devices">
         </div>
         <div class="col-lg-pull-6 col-md-6 col-sm-12 col-xs-12">
-          <div class="txt">Werde Pilot bei Aeronimo. </div>
-          <div class="getstarted"><a href="signup.html">Mehr erfahren <i class="fa fa-long-arrow-right"></i></a></div>
+          <div class="txt">
+            <div class="de">Werde Pilot bei Aeronimo.</div>
+            <div class="en">TELL ME MORE!</div>
+          </div>
+          <div class="getstarted de"><a href="signup.html">Mehr erfahren <i class="fa fa-long-arrow-right"></i></a></div>
+          <div class="getstarted en"><a href="signup.html">Become a drone pilot for Aeronimo <i class="fa fa-long-arrow-right"></i></a></div>
         </div>
       </div>
 
@@ -129,18 +157,32 @@
         <div id="message" style="display:none"></div>
         <div class="col-lg-12 col-md-12 col-sm-12 opt-container">
 
-            <h2>HEBEN SIE MIT AERONIMO AB! More to come soon.</h2>
+            <h2 class="de">HEBEN SIE MIT AERONIMO AB! More to come soon.</h2>
+            <h2 class="en">GET INVOLVED!</h2>
 
-            <form id="contactform" action="//formspree.io/postmaster@aeronimo.com" method="post">
+            <form class="de" id="contactform" action="//formspree.io/postmaster@aeronimo.com" method="post">
                 <div class="row">
                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form">
                     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                      <input name="_replyto" type="email" id="email" placeholder="Enter Your Email">
+                      <input name="_replyto" type="email" placeholder="Email">
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                       <div>
-                        <input class="btn-blue" type="submit" value="Newsletter abonnieren" id="submit">
+                        <input class="btn-blue" type="submit" value="Newsletter abonnieren">
                       </div>
+                    </div>
+                  </div>
+                </div>  
+            </form>
+
+            <form class="en" id="contactformEn" action="//formspree.io/postmaster@aeronimo.com" method="post">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form">
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                      <input name="_replyto" type="email" placeholder="Enter Your Email">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                      <input class="btn-blue" type="submit" value="Sign up for our Newsletter" >
                     </div>
                   </div>
                 </div>  
@@ -154,7 +196,10 @@
   <!-- Footer Section-->
   <section id="footer">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer">
-      <div class="copyright">Copyright © 2016 Aeronimo. All rights reserved.</div>
+      <div class="copyright">
+        <div class="en">Copyright © 2016 Aeronimo. All rights reserved.</div>
+        <div class="de">Copyright © 2016 Geronimo. Alle Rechte vorbehalten.</div>
+      </div>
     </div>
   </section>
 

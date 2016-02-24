@@ -39,7 +39,7 @@ body {
 	margin-right: 0px;
 }
 .nav a {
-	color: #fff;
+	color: #009999;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 900;
@@ -59,8 +59,12 @@ body {
 	position: absolute;
 	margin-left: 4px;
 }
+.language_switcher li.active a:after,
 .language_switcher li:first-child:hover > a:after{
 	color: #009999;
+}
+.language_switcher li.active a{
+	color: #FFAA00;
 }
 /*----- Header Slider----*/
 
@@ -582,6 +586,7 @@ input.button {
 	margin-bottom: 20px;
 	background: #f4f5f6;
 }
+.contact-form #landSelectEn,
 .contact-form #landSelect{
 	height: 52px;
   border-radius: 2px;
@@ -604,6 +609,7 @@ input.button {
 	color: #fff;
 	font-size: 20px;
 }
+.contact-form #submit-btnEn,
 .contact-form #submit-btn{
   max-width: 200px;
   margin-bottom: 0;
@@ -611,6 +617,7 @@ input.button {
   color: #009999;
 	transition: ease-in-out .3s;
 }
+.contact-form #submit-btnEn:hover,
 .contact-form #submit-btn:hover{
 	background: #009999;
 	color: #fff
@@ -688,18 +695,23 @@ input.button {
 	text-align: center;
 }
 @media (max-width: 991px) {
-.contact-form select{
-	margin-bottom: 25px;
-}
-.contact-form #landSelect{
-	margin-bottom: 15px;
-}
-.contact-form input{
-	margin-bottom: 15px;
-}
-label[for="addressHouse"]{
-	display: none;
-}
+	.contact-form select{
+		margin-bottom: 25px;
+	}
+	.contact-form #landSelectEn,
+	.contact-form #landSelect{
+		margin-bottom: 15px;
+	}
+	.contact-form input{
+		margin-bottom: 15px;
+	}
+	label[for="addressHouse"]{
+		display: none;
+	}
+	.nav {
+    margin-top: 30px !important;
+	}
+
 }
 @media (min-width: 768px) {
 	.nav {
@@ -745,11 +757,16 @@ label[for="addressHouse"]{
 	.logo {
 			text-align: center;
 	}
+	.logo img{
+		max-width: 300px;
+    margin: 0 auto;
+	}
 	.nav {
 			font-size: 14px;
 			color: #fff;
 			text-align: center;
-			margin-top: 20px;
+			margin-top: 10px !important;
+			margin-bottom: 20px !important;
 	}
 	.nav ul {
 			padding: 0px;
@@ -765,14 +782,12 @@ label[for="addressHouse"]{
 			margin-right: 0px;
 	}
 	.nav a {
-			color: #fff;
+			
 			text-decoration: none;
 			text-transform: uppercase;
 			font-weight: 900;
 	}
-	.nav a:hover {
-			color: #ff9f74;
-	}
+
 	/*Banner content*/
 	
 	.banner .carousel-indicators {

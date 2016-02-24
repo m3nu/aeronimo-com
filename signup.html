@@ -24,15 +24,15 @@
   <!--Header Section-->
   <div id="signup">
       <div class="container">
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 logo">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 logo">
           <a href="index.html"><img class="img-responsive" src="images/header/logo.png" alt="aeronimo"></a>
         </div>
         <!--Navigation-->
-        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 pull-right ">
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 pull-right ">
           <div class="nav">
             <ul class="language_switcher">
-                <li><a href="#">EN</a></li>
-                <li><a href="#">DE</a></li>
+                <li id="en"><a href="#">EN</a></li>
+                <li id="de" class="active"><a href="#">DE</a></li>
             </ul>
           </div>
         </div>
@@ -46,9 +46,16 @@
   <section id="text-area">
   <div class="container">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 contact">
-      <article>
-        <p>Sie sind professioneller Drohnen-Pilot? Dann sind Sie bei uns richtig: Aernomino ist ein online Marktplatz, der in Kürze professionelle Drohnen-Dienstleister mit Privat- und Business-Kunden vernetzt. Sie wollen gern mehr wissen oder von Anfang an mit dabei sein? Dann schicken Sie uns unkompliziert Ihre Kontaktdaten über das Formular unten oder via Email an <a href="mailto:pilots@aeronimo.com">pilots@aeronimo.com</a></p>
-    </article>
+
+      <article class="de">
+        <p>Sie sind professioneller Drohnen-Pilot? Dann sind Sie bei uns richtig: Aernomino ist ein online Marktplatz, der in Kürze professionelle Drohnen-Dienstleister mit Privat- und Business-Kunden vernetzt.</p>
+        <p>Sie wollen gern mehr wissen oder von Anfang an mit dabei sein? Dann schicken Sie uns unkompliziert Ihre Kontaktdaten über das Formular unten oder via Email an <a href="mailto:pilots@aeronimo.com">pilots@aeronimo.com</a></p>
+      </article>
+      <article class="en">
+        <p>Are you a professional drone pilot? Then you are right here: Aeronimo is an online marketplace, that soon will be matching professional drone services with interested privat and business clients.</p>
+        <p>You want to know more or be part of our troop from the beginning on? Simply fill out the few lines below or drop us a quick email at <a href="mailto:pilots@aeronimo.com">pilots@aeronimo.com</a></p>
+      </article>
+
     </div>
   </div>
     
@@ -58,13 +65,14 @@
       
       <div class="container">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 contact">
-          <h1>Registrieren</h1>
+          <div class="de"><h1>Registrieren</h1></div>
+          <div class="en"><h1>Register</h1></div>
         </div>
       </div>
 
       <div class="container contact-form">
 
-        <form action="//formspree.io/postmaster@aeronimo.com" method="POST">
+        <form class="de" action="//formspree.io/postmaster@aeronimo.com" method="POST">
           <div class="rowchik">
             <div class="col-md-6">
               <label for="firstName" class="">Vorname</label>
@@ -119,7 +127,7 @@
             
             <div class="col-md-12">
               <label class="">Services</label>
-              <select class="tokenizer form-control" multiple>
+              <select data-placeholder="Dropdown mit mehrfach-Auswahl unter folgenden Rubriken" class="tokenizer form-control" multiple>
                 <option value="foto">Fotografie & Videodreh</option>
                 <option value="events">Events & Hochzeiten</option>
                 <option value="werbung">Werbung & Marketing</option>
@@ -140,6 +148,84 @@
           </div>
         </form>
 
+        <form class="en" action="//formspree.io/postmaster@aeronimo.com" method="POST">
+          <div class="rowchik">
+            <div class="col-md-6">
+              <label for="firstName" class="">First Name</label>
+              <input type="text" id="firstNameEn" name="firstname" placeholder="First Name">    
+            </div>
+
+            <div class="col-md-6">
+              <label for="lastName" class="">Last Name</label>
+              <input type="text" id="lastNameEn" name="lastname" placeholder="Last Name">
+            </div>
+
+            <div class="col-md-6">
+              <label for="emailAddress" class="">Email</label>
+              <input type="email" id="emailAddressEn" name="_replyto" placeholder="Email">
+            </div>
+
+            <div class="col-md-6">
+              <label for="phoneNumber" class="">Phone</label>
+              <input type="text" id="phoneNumberEn" placeholder="Phone">
+            </div>
+          
+            <div class="col-md-12">
+              <label for="firmaText" class="">Company</label>
+              <input type="text" id="firmaTextEn" placeholder="Company"> 
+            </div>
+
+            <div class="col-md-9">
+              <label class="">Address</label>
+              <input type="text" id="addressTextEn" placeholder="Street">
+            </div>
+            
+            <div class="col-md-3">
+            <label for="addressHouse" style="opacity: 0">label</label>
+              <input type="text" id="addressHouseEn" placeholder="Appartment">
+            </div>
+
+            <div class="col-md-2">
+              <select class="form-control" id="landSelectEn">
+              <option selected="selected">Country</option>
+              <option>Austria</option>
+              <option>Germany</option>
+              <option>Switzerland</option>
+              <option>Other European countries</option>
+            </select>
+            </div>
+            <div class="col-md-3">
+              <input type="text" id="plzEn" placeholder="ZIP">
+            </div>
+            <div class="col-md-7">
+              <input type="text" id="ortEn" placeholder="State">
+            </div>
+            
+            <div class="col-md-12">
+              <label class="">Services</label>
+              <select data-placeholder="Dropdown (multiple options)" class="tokenizer form-control" multiple>
+                <option value="foto">Film & TV</option>
+                <option value="events">Events & Weddings</option>
+                <option value="werbung">Real Estate</option>
+                <option value="tour">Tourismus</option>
+                <option value="land">Advertising & Marketing</option>
+                <option value="land">Construction</option>
+                <option value="infra">Forestry</option>
+                <option value="not">Agriculture & Farming</option>
+                <option value="andere">Energie</option>
+                <option value="infrastr">Infrastructure surveillance</option>
+                <option value="emergen">Emergencies & Natural desasters</option>
+                <option value="other">Other (specify)</option>
+              </select>
+            </div>
+
+            <div class="col-md-12">
+              <input type="submit" id="submit-btnEn" value="Register">
+            </div>
+
+          </div>
+        </form>
+
       </div>
       <div id="contact-message" style="display:none"></div>
   </section>
@@ -147,7 +233,10 @@
   <!-- Footer Section-->
   <section id="footer">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer">
-      <div class="copyright">Copyright © 2016 Aeronimo. All rights reserved.</div>
+      <div class="copyright">
+        <div class="en">Copyright © 2016 Aeronimo. All rights reserved.</div>
+        <div class="de">Copyright © 2016 Geronimo. Alle Rechte vorbehalten.</div>
+      </div>
     </div>
   </section>
 
@@ -161,14 +250,32 @@
     $(document).ready(function(){
 
       $(".tokenizer").select2({
-        placeholder: 'Choose multiple',
         multiple: true,
         allowClear: true,
         tags: [],
         cache: false,
         tokenSeparators: [',', ' '],
         width: '100%' 
-      })
+      });
+
+      if($('.language_switcher li#de').is('.active')){
+        $('body').find('.en').hide()
+      }
+
+      $('.language_switcher li').click(function(){
+        $('.language_switcher li').removeClass('active');
+        $(this).addClass('active');
+
+        if($('.language_switcher #en').is('.active')){
+          $('body').find('.de').hide();
+          $('body').find('.en').show();
+        }
+        if($('.language_switcher #de').is('.active')){
+          $('body').find('.en').hide();
+          $('body').find('.de').show();
+        } 
+
+      }); 
 
     });
   </script>
