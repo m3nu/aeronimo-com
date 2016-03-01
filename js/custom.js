@@ -56,18 +56,18 @@
 	$(document).ready(function(){
 		// Home page forms
 		$('form.de input[type="submit"]').click(function(){
-			$.post("//formspree.io/postmaster@aeronimo.com", $("#contactform").serialize(),  function(response) {
-				$('#message').html(response);
+			$.post("//formspree.io/postmaster@aeronimo.com", $("#contactform").serialize(),  function() {
+				$('#message').html('Danke für Ihre Anmeldung. Sie hören von uns.');
 				$( "#message" ).show(1000);
-			});
+			}, "json");
 			return false;
 		});
 
 		$('form.en input[type="submit"]').click(function(){
-			$.post("//formspree.io/postmaster@aeronimo.com", $("#contactformEn").serialize(),  function(response) {
-				$('#message').html(response);
+			$.post("//formspree.io/postmaster@aeronimo.com", $("#contactformEn").serialize(),  function() {
+				$('#message').html('Thanks for signing up. We will get back to you soon.');
 				$( "#message" ).show(1000);
-			});
+			}, "json");
 			return false;
 		});
 
@@ -75,9 +75,9 @@
 		$('form.de #submit-btn').click(function(){
 
 			$.post("//formspree.io/postmaster@aeronimo.com", $("#registerDE").serialize(),  function(response) {
-				$('#contact-message').html(response);
+				$('#contact-message').html('Danke für Ihre Anmeldung. Sie hören von uns.');
 				$( "#contact-message" ).show(1000);
-			});
+			}, "json");
 			return false;
 
 		});
@@ -85,9 +85,9 @@
 		$('form.en #submit-btnEn').click(function(){
 
 			$.post("//formspree.io/postmaster@aeronimo.com", $("#registerEN").serialize(),  function(response) {
-				$('#contact-message').html(response);
+				$('#contact-message').html('Thanks for signing up. We will get back to you soon.');
 				$( "#contact-message" ).show(1000);
-			});
+			}, "json");
 			return false;
 
 		});
