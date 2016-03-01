@@ -235,6 +235,10 @@ body {
 	padding-bottom: 0px !important;
 	line-height: 52px;
 }
+
+#_gotcha {
+	display: none;
+}
 /* success message overlay*/
 
 .msg {
@@ -570,7 +574,7 @@ input.button {
 }
 .contact-form input {
 	width: 100%;
-	padding: 15px;
+	padding: 10px;
 	border: none;
 	border-radius: 2px;
 	font-size: 16px;
@@ -590,7 +594,7 @@ input.button {
 }
 .contact-form #landSelectEn,
 .contact-form #landSelect{
-	height: 52px;
+  height: 42px;
   border-radius: 2px;
   box-shadow: none;
   font-size: 16px;
@@ -630,6 +634,10 @@ input.button {
 	color: #fff;
 	font-size: 16px;
 	padding: 15px 0;
+}
+
+.select2-container {
+	padding: 5px 0 !important;
 }
 /*----- Footer section ----*/
 

@@ -73,6 +73,7 @@
       <div class="container contact-form">
 
         <form id="registerDE" class="de" action="//formspree.io/postmaster@aeronimo.com" method="POST">
+          <input type="text" id="_gotcha" name="_gotcha">
           <div class="rowchik">
             <div class="col-md-6">
               <label for="firstName" class="">Vorname</label>
@@ -128,16 +129,15 @@
             <div class="col-md-12">
               <label class="">Services</label>
               <select name="services" data-placeholder="Dropdown mit mehrfach-Auswahl unter folgenden Rubriken" class="tokenizer form-control" multiple>
-                <option value="foto">Fotografie & Videodreh</option>
+                <option value="photo">Fotografie & Videodreh</option>
                 <option value="events">Events & Hochzeiten</option>
-                <option value="werbung">Werbung & Marketing</option>
-                <option value="tour">Tourismus</option>
-                <option value="land">Land- und Forstwirtschaft</option>
-                <option value="ener">Energie</option>
-                <option value="land">Land- und Forstwirtschaft</option>
-                <option value="infra">Infrastrukturüberwachung</option>
-                <option value="not">Notfälle und Naturkatastrophen</option>
-                <option value="andere">Andere (offenes Feld – welche)</option>
+                <option value="marketing">Werbung & Marketing</option>
+                <option value="tourism">Tourismus</option>
+                <option value="agriculture">Land- und Forstwirtschaft</option>
+                <option value="energy">Energie</option>
+                <option value="infrastructure">Infrastrukturüberwachung</option>
+                <option value="emergencies">Notfälle und Naturkatastrophen</option>
+                <option value="other">Andere (offenes Feld – welche)</option>
               </select>
             </div>
 
@@ -149,20 +149,21 @@
         </form>
 
         <form id="registerEN" class="en" action="//formspree.io/postmaster@aeronimo.com" method="POST">
+          <input type="text" id="_gotcha" name="_gotcha">
           <div class="rowchik">
             <div class="col-md-6">
               <label for="firstName" class="">First Name</label>
-              <input type="text" id="firstNameEn" name="firstname" placeholder="First Name">
+              <input type="text" id="firstNameEn" name="firstname" placeholder="First Name" required="">
             </div>
 
             <div class="col-md-6">
               <label for="lastName" class="">Last Name</label>
-              <input type="text" id="lastNameEn" name="lastname" placeholder="Last Name">
+              <input type="text" id="lastNameEn" name="lastname" placeholder="Last Name" required>
             </div>
 
             <div class="col-md-6">
               <label for="emailAddress" class="">Email</label>
-              <input type="email" id="emailAddressEn" name="email" placeholder="Email">
+              <input type="email" id="emailAddressEn" name="email" placeholder="Email" required="">
             </div>
 
             <div class="col-md-6">
@@ -204,17 +205,17 @@
             <div class="col-md-12">
               <label class="">Services</label>
               <select data-placeholder="Dropdown (multiple options)" name="services" class="tokenizer form-control" multiple>
-                <option value="foto">Film & TV</option>
+                <option value="photo">Film & TV</option>
                 <option value="events">Events & Weddings</option>
-                <option value="werbung">Real Estate</option>
-                <option value="tour">Tourismus</option>
-                <option value="land">Advertising & Marketing</option>
-                <option value="land">Construction</option>
-                <option value="infra">Forestry</option>
-                <option value="not">Agriculture & Farming</option>
-                <option value="andere">Energie</option>
-                <option value="infrastr">Infrastructure surveillance</option>
-                <option value="emergen">Emergencies & Natural desasters</option>
+                <option value="real">Real Estate</option>
+                <option value="tourism">Tourismus</option>
+                <option value="marketing">Advertising & Marketing</option>
+                <option value="construction">Construction</option>
+                <option value="forestry">Forestry</option>
+                <option value="agriculture">Agriculture & Farming</option>
+                <option value="energy">Energie</option>
+                <option value="infrastructure">Infrastructure surveillance</option>
+                <option value="emergencies">Emergencies & Natural desasters</option>
                 <option value="other">Other (specify)</option>
               </select>
             </div>
