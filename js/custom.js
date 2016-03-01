@@ -56,7 +56,7 @@
 	$(document).ready(function(){
 		// Home page forms
 		$('form.de input[type="submit"]').click(function(){
-			$.post("newsletter.php", $("#contactform").serialize(),  function(response) {
+			$.post("//formspree.io/postmaster@aeronimo.com", $("#contactform").serialize(),  function(response) {
 				$('#message').html(response);
 				$( "#message" ).show(1000);
 			});
@@ -64,7 +64,7 @@
 		});
 
 		$('form.en input[type="submit"]').click(function(){
-			$.post("newsletter.php", $("#contactformEn").serialize(),  function(response) {
+			$.post("//formspree.io/postmaster@aeronimo.com", $("#contactformEn").serialize(),  function(response) {
 				$('#message').html(response);
 				$( "#message" ).show(1000);
 			});
@@ -74,7 +74,7 @@
 		//SingUp page forms
 		$('form.de #submit-btn').click(function(){
 
-			$.post("register.php", $("#registerDE").serialize(),  function(response) {
+			$.post("//formspree.io/postmaster@aeronimo.com", $("#registerDE").serialize(),  function(response) {
 				$('#contact-message').html(response);
 				$( "#contact-message" ).show(1000);
 			});
@@ -84,7 +84,7 @@
 
 		$('form.en #submit-btnEn').click(function(){
 
-			$.post("register.php", $("#registerEN").serialize(),  function(response) {
+			$.post("//formspree.io/postmaster@aeronimo.com", $("#registerEN").serialize(),  function(response) {
 				$('#contact-message').html(response);
 				$( "#contact-message" ).show(1000);
 			});
