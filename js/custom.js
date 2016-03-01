@@ -7,7 +7,7 @@ $(document).ready(function() {
 	var header_height 	= $('#home').innerHeight(),
 			viewport_width 	= window.innerWidth,
 			viewport_height = window.innerHeight,
-			slider_height 	= viewport_height - header_height;
+			slider_height 	= viewport_height - header_height - 100;
 
 //Banner
 	$('.banner,.carousel .item').height(slider_height);
@@ -16,7 +16,7 @@ $(document).ready(function() {
 	var header_height 	= $('#home').innerHeight(),
 			viewport_width 	= window.innerWidth,
 			viewport_height = window.innerHeight,
-			slider_height 	= viewport_height - header_height;
+			slider_height 	= viewport_height - header_height - 100;
 
 		$('.banner,.carousel .item').height(slider_height);
 	});

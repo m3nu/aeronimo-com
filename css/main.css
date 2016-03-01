@@ -73,7 +73,7 @@ body {
 	position: relative;
 	text-align: center;
 	color: #fff;
-	min-height: 700px;
+	min-height: 300px;
 	background: #000;
 }
 .banner .container {
@@ -112,7 +112,7 @@ body {
 .banner .carousel-inner > .item {
 	background-size: cover;
 	background-position: center;
-	min-height: 700px;
+	min-height: 300px;
 }
 .banner .carousel-indicators {
 	bottom: 4%;
@@ -159,7 +159,7 @@ body {
 .content h1 {
 	font-size: 60px;
 	color: #fff;
-	font-weight: 900;
+	font-weight: 500;
 	margin: 0px;
 	text-shadow: 1px 2px 2px rgba(0, 0, 0, .6);
 }
@@ -193,7 +193,7 @@ body {
 /*----- Opt-in section ----*/
 
 .bluebg {
-	background: #6abbd9;
+	background: #33cccc;
 }
 .opt-container {
 	text-align: center;
@@ -808,7 +808,7 @@ input.button {
 			font-size: 30px;
 			line-height: 30px;
 			color: #fff;
-			font-weight: 900;
+			font-weight: 500;
 			margin: 0px;
 			text-shadow: 1px 2px 2px rgba(0, 0, 0, .6);
 	}
