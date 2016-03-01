@@ -56,7 +56,7 @@
 	$(document).ready(function(){
 		// Home page forms
 		$('form.de input[type="submit"]').click(function(){
-			$.post("//formspree.io/postmaster@aeronimo.com", $("#contactform").serialize(),  function() {
+			$.post("//formspree.io/fly@aeronimo.com", $("#contactform").serialize(),  function() {
 				$('.text-msg').html('Danke für Ihre Anmeldung. Sie hören von uns.');
 				$( "#message" ).show(1000);
 			}, "json");
@@ -64,7 +64,7 @@
 		});
 
 		$('form.en input[type="submit"]').click(function(){
-			$.post("//formspree.io/postmaster@aeronimo.com", $("#contactformEn").serialize(),  function() {
+			$.post("//formspree.io/fly@aeronimo.com", $("#contactformEn").serialize(),  function() {
 				$('.text-msg').html('Thanks for signing up. We will get back to you soon.');
 				$( "#message" ).show(1000);
 			}, "json");
@@ -74,7 +74,7 @@
 		//SingUp page forms
 		$('form.de #submit-btn').click(function(){
 
-			$.post("//formspree.io/postmaster@aeronimo.com", $("#registerDE").serialize(),  function(response) {
+			$.post("//formspree.io/fly@aeronimo.com", $("#registerDE").serialize(),  function(response) {
 				$('.text-msg').html('Danke für Ihre Anmeldung. Sie hören von uns.');
 				$( "#contact-message" ).show(1000);
 			}, "json");
@@ -84,7 +84,7 @@
 
 		$('form.en #submit-btnEn').click(function(){
 
-			$.post("//formspree.io/postmaster@aeronimo.com", $("#registerEN").serialize(),  function(response) {
+			$.post("//formspree.io/fly@aeronimo.com", $("#registerEN").serialize(),  function(response) {
 				$('.text-msg').html('Thanks for signing up. We will get back to you soon.');
 				$( "#contact-message" ).show(1000);
 			}, "json");
