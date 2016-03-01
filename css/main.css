@@ -246,7 +246,7 @@ body {
 	z-index: 20;
 	width: 100%;
 	height: 100%;
-	background: rgba(106, 187, 217, 0.85);
+  background: rgba(51, 204, 204, 0.86);
 }
 .success .text-msg {
 	color: #fff;
