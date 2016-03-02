@@ -55,40 +55,30 @@
 //Opt-in Form
 	$(document).ready(function(){
 		// Home page forms
-		$('form.de input[type="submit"]').click(function(){
-			$.post("//formspree.io/fly@aeronimo.com", $("#contactform").serialize(),  function() {
-				$('.text-msg').html('Danke für Ihre Anmeldung. Sie hören von uns.');
-				$( "#message" ).show(1000);
-			}, "json");
-			return false;
-		});
+		$('.formspree').on('submit', function(e){
 
-		$('form.en input[type="submit"]').click(function(){
-			$.post("//formspree.io/fly@aeronimo.com", $("#contactformEn").serialize(),  function() {
-				$('.text-msg').html('Thanks for signing up. We will get back to you soon.');
-				$( "#message" ).show(1000);
-			}, "json");
-			return false;
-		});
+		  var current     = $(this),
+		      action      = '//formspree.io/fly@aeronimo.com',
+		      validation  = current[0].checkValidity();
 
-		//SingUp page forms
-		$('form.de #submit-btn').click(function(){
+		  if(validation){
 
-			$.post("//formspree.io/fly@aeronimo.com", $("#registerDE").serialize(),  function(response) {
-				$('.text-msg').html('Danke für Ihre Anmeldung. Sie hören von uns.');
-				$( "#contact-message" ).show(1000);
-			}, "json");
-			return false;
+		    $.post(action, $(current).serialize(),  function() {
+		     
+		      if(current.is('.de')){
+		        $('.text-msg').html('Danke für Ihre Anmeldung. Sie hören von uns.');
+		      } else {
+		        $('.text-msg').html('Thanks for signing up. We will get back to you soon.');
+		      }
+		      $( "#message" ).show(1000);
+		     
+		    }, "json");
 
-		});
+		    return false;
 
-		$('form.en #submit-btnEn').click(function(){
+		  }
 
-			$.post("//formspree.io/fly@aeronimo.com", $("#registerEN").serialize(),  function(response) {
-				$('.text-msg').html('Thanks for signing up. We will get back to you soon.');
-				$( "#contact-message" ).show(1000);
-			}, "json");
-			return false;
+		  e.preventDefault();
 
 		});
 
